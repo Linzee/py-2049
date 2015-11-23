@@ -19,6 +19,7 @@ All trains
 It calculate probability you'll be able to change your train based on past delays.
 
 Input is list of train names with time (in minutes) you have between each to transfer.
+
 ```python 2049.py -p "EC 277 Slovan" 40 "R 1601 Chopok" 10 "Os 9119" 20 "Os 9219"```
 
 ```python 2049.py -p "Os 4171" 32 "Zr 1847 Rozsutec" 20 "R 811 Gemeran"```
@@ -39,7 +40,7 @@ Konkrétny vlak
 Skupina vlakov
 ```python 2049.py -t "EC"```
 
-Všsetky vlaky
+Všetky vlaky
 ```python 2049.py```
 
 ###Pravdepodobnosť, že stihnem prestúpiť
@@ -48,6 +49,7 @@ Výpočet pravdepodobnosti, že stihnem prestúpiť na základe predošlích úd
 Program najprv vyhľadá stanice v ktorých sa bude prestupovať. Pre každý vlak zistí koľko krát stihol prísť z menším ako zadaným meškaním a vypočíta pravepodobnoť prestupu.
 
 Zadáva sa zoznam mien vlakov z časom na prestup medzi nimi.
+
 ```python 2049.py -p "EC 277 Slovan" 40 "R 1601 Chopok" 10 "Os 9119" 20 "Os 9219"```
 
 ```python 2049.py -p "Os 4171" 32 "Zr 1847 Rozsutec" 20 "R 811 Gemeran" 10```
