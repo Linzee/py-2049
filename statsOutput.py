@@ -1,0 +1,3 @@
+class Output():
+    stats = {}
+    items = []
