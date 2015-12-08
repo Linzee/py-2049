@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 
-from datetime import datetime
-import json
 import matplotlib.pyplot as plt
+from statsOutput import Output
+from datetime import datetime
 import numpy as np
 import pandas
-from statsOutput import Output
 import time
+import json
 
 def loadItems(path, options):
     output = Output()
@@ -50,7 +50,7 @@ def printStats(output):
     for someItems in output.stats.values():
         allDelays.extend(someItems)
     
-    avg = np.average(allDelays)
+    avg = np.mean(allDelays)
     sum = np.sum(allDelays)
     
     def minutes(mins):
